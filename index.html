@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tax Haven Sandwiches in U.S. Multinational Entities</title>
+  <style>
+    :root {
+      --ink: #1f2328;
+      --muted: #5f6368;
+      --rule: #d8d2c6;
+      --paper: #fbfaf7;
+      --panel: #ffffff;
+      --cardinal: #8c1515;
+      --red: #b83a2d;
+      --teal: #0f6b6d;
+      --gold: #c99700;
+      --blue: #294d7a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #ebe6dc;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .sheet {
+      width: 2400px;
+      min-height: 1500px;
+      margin: 0 auto;
+      padding: 46px 58px 36px;
+      background: var(--paper);
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 44px;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 3px solid var(--ink);
+    }
+    h1 {
+      margin: 0;
+      max-width: 1200px;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 62px;
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+    .dek {
+      margin: 0;
+      color: #34302c;
+      font-size: 28px;
+      line-height: 1.28;
+    }
+    .dek strong {
+      color: var(--ink);
+      font-weight: 850;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      margin-top: 22px;
+    }
+    .panel {
+      background: var(--panel);
+      border: 1.5px solid var(--rule);
+      border-radius: 6px;
+      height: 520px;
+      min-height: 0;
+      padding: 18px 20px 16px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .panel-head {
+      display: flex;
+      gap: 14px;
+      align-items: baseline;
+      min-height: 40px;
+      margin-bottom: 8px;
+    }
+    .panel-letter {
+      color: var(--cardinal);
+      font-size: 26px;
+      font-weight: 900;
+    }
+    h2 {
+      margin: 0;
+      font-size: 25px;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .visual {
+      width: 100%;
+      height: 410px;
+      flex: none;
+      object-fit: contain;
+      object-position: center;
+      min-height: 0;
+      border: 1px solid #eee9df;
+      background: #fff;
+    }
+    .network {
+      object-fit: contain;
+      object-position: center;
+    }
+    .chart-visual {
+      width: 98%;
+      height: 402px;
+      margin: 8px auto 0;
+      object-position: center center;
+    }
+    .caption {
+      margin: 9px 2px 0;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.22;
+    }
+    .table-panel {
+      height: 520px;
+      min-height: 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 21px;
+      line-height: 1.18;
+    }
+    th {
+      color: var(--muted);
+      font-size: 16px;
+      text-transform: uppercase;
+      text-align: left;
+      padding: 0 12px 12px 0;
+      border-bottom: 2px solid var(--ink);
+    }
+    td {
+      padding: 15px 12px 15px 0;
+      border-bottom: 1px solid #e7e1d7;
+      vertical-align: top;
+      font-weight: 650;
+    }
+    .num {
+      text-align: right;
+      color: var(--cardinal);
+      font-variant-numeric: tabular-nums;
+    }
+    .summary-note {
+      margin-top: 24px;
+      border-left: 8px solid var(--teal);
+      background: #f5f3ed;
+      padding: 18px 20px;
+      color: #393631;
+      font-size: 22px;
+      line-height: 1.25;
+    }
+    .summary-note strong {
+      color: var(--cardinal);
+    }
+    footer {
+      margin-top: 20px;
+      border-top: 3px solid var(--ink);
+      padding-top: 18px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      font-size: 18px;
+      line-height: 1.24;
+      color: #393631;
+    }
+    .defs {
+      display: grid;
+      grid-template-columns: max-content max-content max-content max-content;
+      justify-content: space-between;
+      gap: 14px;
+      font-size: 15px;
+    }
+    .defs div {
+      padding-left: 11px;
+      border-left: 5px solid var(--blue);
+      white-space: nowrap;
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: 1fr max-content;
+      gap: 18px;
+      align-items: end;
+    }
+    .notes {
+      display: grid;
+      gap: 8px;
+    }
+    .credit {
+      text-align: right;
+      white-space: nowrap;
+    }
+    .affiliation {
+      color: var(--cardinal);
+      font-weight: 850;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .source strong, .ai strong, .credit strong {
+      color: var(--cardinal);
+      text-transform: uppercase;
+    }
+    @media (max-width: 900px) {
+      .sheet {
+        width: 100%;
+        min-height: auto;
+        padding: 28px 18px;
+      }
+      header, .grid, footer, .defs {
+        grid-template-columns: 1fr;
+      }
+      h1 { font-size: 42px; }
+      .dek { font-size: 20px; }
+      .panel { min-height: 560px; }
+      .meta {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <header>
+      <div>
+        <h1>Tax Haven Sandwiches in the Universe of United States Multinational Entities</h1>
+      </div>
+      <p class="dek">U.S. multinationals may <strong>locate entities strategically</strong> to reduce effective tax rates by shifting intellectual property. The canonical <strong>Double Irish</strong> and <strong>Dutch Sandwich</strong> structures have drawn OECD scrutiny for enabling large-scale tax avoidance, estimated in the <strong>hundreds of billions annually</strong>.</p>
+    </header>
+
+    <section class="grid" aria-label="Four-panel infographic">
+      <article class="panel">
+        <div class="panel-head"><span class="panel-letter">A</span><h2>One observed ownership network</h2></div>
+        <img class="visual network" src="assets/panel_a_pfizer_network.png" alt="Example Network: Pfizer Inc. 2020">
+        <p class="caption">Pfizer's 2020 ownership graph; orange links mark edges involved in detected haven-sandwich paths.</p>
+      </article>
+
+      <article class="panel">
+        <div class="panel-head"><span class="panel-letter">B</span><h2>Specific sandwich patterns over time</h2></div>
+        <img class="visual chart-visual" src="assets/panel_b_specific_patterns.png" alt="Time series comparing all haven sandwiches with specific comparison patterns">
+      </article>
+
+      <article class="panel">
+        <div class="panel-head"><span class="panel-letter">C</span><h2>Sandwich families compared with non-haven families</h2></div>
+        <img class="visual chart-visual" src="assets/panel_c_family_patterns.png" alt="Time series comparing sandwich families with labeled comparison families">
+      </article>
+
+      <article class="panel table-panel">
+        <div class="panel-head"><span class="panel-letter">D</span><h2>Top sandwich-using companies, 2007-2022</h2></div>
+        <table>
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th class="num">Instances</th>
+              <th>Industry</th>
+              <th>Top family</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr><td>Pfizer</td><td class="num">119</td><td>Pharmaceuticals</td><td>Netherlands</td></tr>
+              <tr><td>Merck</td><td class="num">110</td><td>Pharmaceuticals</td><td>Ireland</td></tr>
+              <tr><td>General Electric</td><td class="num">105</td><td>Transportation equipment</td><td>Netherlands</td></tr>
+              <tr><td>TTM Technologies</td><td class="num">68</td><td>Electronic components</td><td>Other haven</td></tr>
+              <tr><td>Hasbro</td><td class="num">63</td><td>Toy and misc. manufacturing</td><td>Netherlands</td></tr>
+          </tbody>
+        </table>
+        <div class="summary-note"><strong>Top-five concentration:</strong> these firms account for 22.6% of observed haven-sandwich instances in the aggregate top-company summary.</div>
+      </article>
+    </section>
+
+    <footer>
+      <div class="defs">
+        <div><strong>Tax Haven Sandwich:</strong> Haven A &rarr; Haven B &rarr; Haven A.</div>
+        <div><strong>Sandwich Family:</strong> Haven A &rarr; any haven &rarr; Haven A.</div>
+        <div><strong>Comparison Pattern:</strong> Non-U.S. Country A &rarr; Non-U.S. Country B &rarr; Non-U.S. Country A.</div>
+        <div><strong>Comparison Family:</strong> Non-U.S. Country A &rarr; any non-U.S. country &rarr; Non-U.S. Country A.</div>
+      </div>
+      <div class="meta">
+        <div class="notes">
+          <div class="source"><strong>Data source:</strong> Orbis Historical 2007-2022, provided by Stanford University Graduate School of Business Library.</div>
+          <div class="ai"><strong>AI usage note:</strong> No Orbis microdata were input into Codex; only aggregate statistics were used to create these visuals.</div>
+        </div>
+        <div class="credit"><div class="affiliation">Stanford Graduate School of Business</div><strong>Created by:</strong> Scott Masterson</div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
